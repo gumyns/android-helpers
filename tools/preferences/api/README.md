@@ -1,4 +1,4 @@
-##Usage
+## Usage
 
 When preferences object is available, when context is super class is not Context, or with dependency injection, e.g. Dagger
 ```kotlin
@@ -15,15 +15,15 @@ private var webserviceAddress: String? by applicationContext.defaultPrefs()
 private var webserviceAddress: String? by defaultPrefs("Hello")
 private var webserviceAddress: String? by applicationContext.defaultPrefs("Hello")
 ```
-
-##Dependecies
+ 
+## Dependecies
 
 ```groovy
 "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 "org.jetbrains.kotlin:kotlin-reflect:$kotlin_version"
 ```
 
-##Proguard
+## Proguard
 
 ```proguard
 -keep class kotlin.reflect.** { *; }
